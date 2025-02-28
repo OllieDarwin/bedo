@@ -1,10 +1,11 @@
 import { BadgeDollarSign, Bot, ChartLine, Clock, Cpu, Shield } from "lucide-react"
 import ReactLenis from "lenis/react"
 import { useEffect, useRef } from "react"
+import MenuButton from "./components/nav/MenuButton"
 
 function App() {
-	const leftColumnRef = useRef<HTMLDivElement>(null);
-	const rightColumnRef = useRef<HTMLDivElement>(null);
+	const leftColumnRef = useRef<HTMLDivElement>(null)
+	const rightColumnRef = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -23,22 +24,27 @@ function App() {
 		}
 
 		// Add scroll event listener
-		window.addEventListener('scroll', handleScroll);
+		window.addEventListener('scroll', handleScroll)
 		
 		// Initial position
-		handleScroll();
+		handleScroll()
 		
 		// Clean up
 		return () => {
-			window.removeEventListener('scroll', handleScroll);
-		};
-	}, []);
+			window.removeEventListener('scroll', handleScroll)
+		}
+	}, [])
 
 	return (
 		<>
 			<ReactLenis root>
+				<header className="navbar w-full z-100 absolute top-0 left-0 px-12 justify-between">
+					<h1 className="font-bold text-xl navbar-start">BEDO Intelligence</h1>
+					{/* <AlignJustify className="content-end fixed right-12" /> */}
+					<MenuButton color="white" className="content-end fixed right-12"></MenuButton>
+				</header>
 				<section className="bg-[#030303] h-screen flex flex-row items-center justify-between overflow-hidden" id="hero">
-					<div className="pl-16 w-1/2 z-20">
+					<div className="pl-16 w-1/2 z-20 mt-16">
 						<h3 className="text-md text-blue-400 uppercase font-medium tracking-widest">Welcome to BEDO Intelligence</h3>
 						<h1 className="text-5xl font-bold mt-2">AI-Powered Trading</h1>
 						<h1 className="text-5xl font-bold mt-2">Intelligence</h1>
