@@ -18,6 +18,11 @@ function Why() {
                 <button onClick={() => setSelected("automation")} className={`px-8 py-2 border-white cursor-pointer ${selected === "automation" && "border-t-2"}`}>Smart Automation</button>
                 <button onClick={() => setSelected("personalities")} className={`px-8 py-2 border-white cursor-pointer ${selected === "personalities" && "border-t-2"}`}>Customisable AI</button>
             </div>
+            <h2 className="text-zinc-400 text-md mt-8 w-1/2 text-center">
+                {selected === "analytics" && "Our AI-powered platform provides real-time market analysis and predictive insighhts to help you make informed trading decisions."}
+                {selected === "automation" && "Let our intelligent algorithms handle your trading strategy execution and focus on what matters most"}
+                {selected === "personalities" && "Select from a variety of trading \"personalities\" to customise your trading bot and ensure we make the best decision for you."}
+            </h2>
         </section>
     )
 }
