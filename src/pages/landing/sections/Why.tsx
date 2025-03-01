@@ -1,0 +1,25 @@
+import { useState } from "react"
+
+function Why() {
+
+    const [selected, setSelected] = useState<"analytics" | "automation" | "personalities">("analytics")
+
+    return (
+        <section className="py-12 md:py-16 px-4 md:px-16 bg-[#030303] flex flex-col items-center justify-center" id="why">
+            <h3 className="text-sm md:text-md text-blue-400 text-center uppercase font-medium tracking-widest">Why Choose BEDO</h3>
+            <h2 className="text-2xl md:text-3xl font-bold text-center">Take your emotion out of the equation</h2>
+            <div className="w-4/5 mx-auto mt-8" id="vignette">
+                {selected === "analytics" && <img src="images/graphics/market-analysis.svg" className="w-full h-full opacity-80" id="vignette" alt="" />}
+                {selected === "automation" && <img src="images/graphics/automation.svg" className="w-full h-full opacity-80" id="vignette" alt="" />}
+                {selected === "personalities" && <img src="images/graphics/personalities.svg" className="w-full h-full opacity-80" id="vignette" alt="" />}
+            </div>
+            <div className="grid grid-cols-3 mt-8 gap-4">
+                <button onClick={() => setSelected("analytics")} className={`px-8 py-2 border-white cursor-pointer ${selected === "analytics" && "border-t-2"}`}>Advanced Analytics</button>
+                <button onClick={() => setSelected("automation")} className={`px-8 py-2 border-white cursor-pointer ${selected === "automation" && "border-t-2"}`}>Smart Automation</button>
+                <button onClick={() => setSelected("personalities")} className={`px-8 py-2 border-white cursor-pointer ${selected === "personalities" && "border-t-2"}`}>Customisable AI</button>
+            </div>
+        </section>
+    )
+}
+
+export default Why
