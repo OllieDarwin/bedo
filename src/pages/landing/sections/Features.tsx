@@ -2,7 +2,7 @@ import { Bot, ChartLine, Clock, Shield } from "lucide-react"
 
 function Features() {
     return (
-        <section className="py-12 md:py-16 px-4 md:px-16 bg-[#030303] flex flex-col items-center justify-center" id="why">
+        <section className="py-16 md:py-32 px-4 md:px-16 bg-[#030303] flex flex-col items-center justify-center" id="features">
             <h3 className="text-sm md:text-md text-blue-400 text-center uppercase font-medium tracking-widest">Our Features</h3>
             <h2 className="text-2xl md:text-3xl font-bold text-center">Solve all your trading problems with one solution</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">

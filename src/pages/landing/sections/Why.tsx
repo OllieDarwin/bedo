@@ -14,9 +14,9 @@ function Why() {
                 {selected === "personalities" && <img src="images/graphics/personalities.svg" className="w-full h-full opacity-80" id="vignette" alt="" />}
             </div>
             <div className="grid grid-cols-3 mt-8 gap-4">
-                <button onClick={() => setSelected("analytics")} className={`px-8 py-2 border-white cursor-pointer ${selected === "analytics" && "border-t-2"}`}>Advanced Analytics</button>
-                <button onClick={() => setSelected("automation")} className={`px-8 py-2 border-white cursor-pointer ${selected === "automation" && "border-t-2"}`}>Smart Automation</button>
-                <button onClick={() => setSelected("personalities")} className={`px-8 py-2 border-white cursor-pointer ${selected === "personalities" && "border-t-2"}`}>Customisable AI</button>
+                <button onClick={() => setSelected("analytics")} className={`px-8 py-2 border-white cursor-pointer ${selected === "analytics" ? "border-t-2 text-white" : "text-zinc-400"}`}>Advanced Analytics</button>
+                <button onClick={() => setSelected("automation")} className={`px-8 py-2 border-white cursor-pointer ${selected === "automation" ? "border-t-2 text-white" : "text-zinc-400"}`}>Smart Automation</button>
+                <button onClick={() => setSelected("personalities")} className={`px-8 py-2 border-white cursor-pointer ${selected === "personalities" ? "border-t-2 text-white" : "text-zinc-400"}`}>Customisable AI</button>
             </div>
             <h2 className="text-zinc-400 text-md mt-8 w-1/2 text-center">
                 {selected === "analytics" && "Our AI-powered platform provides real-time market analysis and predictive insighhts to help you make informed trading decisions."}

@@ -24,7 +24,7 @@ const content = [
 
 function Testimonials() {
     return (
-        <section className="py-12 md:py-16 px-4 md:px-16 bg-[#030303] flex flex-col justify-center" id="why">
+        <section className="py-12 md:py-16 px-4 md:px-16 bg-[#030303] flex flex-col justify-center" id="testimonials">
             <div className="w-full md:w-1/2">
                 <h3 className="text-sm md:text-md text-blue-400 uppercase font-medium tracking-widest">Testimonials</h3>
                 <h2 className="text-2xl md:text-3xl font-bold">See what our customers think</h2>
