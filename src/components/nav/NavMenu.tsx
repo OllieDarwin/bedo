@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import Lenis from "lenis"
 import { X } from "lucide-react"
 import { RefObject } from "react"
+import { Link } from "react-router"
 
 interface NavMenuProps {
     isOpen: boolean,
@@ -55,7 +56,22 @@ function NavMenu({ isOpen, onClose }: NavMenuProps) {
                     <X size={24} color="white" className="mr-8 cursor-pointer" />
                 </button>
                 <div className="h-full mx-8 sm:mx-12 md:mx-16 flex flex-col items-start justify-center">
-                   
+                    <div className="w-full h-full flex items-center">
+                        <ul className="flex flex-col gap-4">
+                            <li className="text-2xl text-white font-bold">
+                                <Link to="/">Home</Link>
+                            </li>  
+                            <li className="text-2xl text-white font-bold">
+                                <Link to="/how-it-works">How it Works</Link>
+                            </li>    
+                            <li className="text-2xl text-white font-bold">
+                                <Link to="/terms-of-service">Terms & Conditions</Link>
+                            </li>  
+                            <li className="text-2xl text-white font-bold">
+                                <Link to="/privacy-policy">Privacy Policy</Link>
+                            </li>    
+                        </ul>  
+                    </div>
                 </div>
             </motion.div>
         </>

@@ -31,3 +31,7 @@
 #gold-glow {
   background: radial-gradient(ellipse, #e9a907 0%, #e9a90700 70%);
 }
+
+#page-overlay {
+  background: linear-gradient(90deg, rgba(3, 3, 3, 1) 0%, rgba(3, 3, 3, 0) 20%, rgba(3, 3, 3, 0) 80%, rgba(3, 3, 3, 1) 100%);
+}
