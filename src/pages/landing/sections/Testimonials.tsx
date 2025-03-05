@@ -1,24 +1,24 @@
 const content = [
     {
         id: 1,
-        text: "I absolutely love BEDO I might be the world's biggest BEDOphile!!!",
-        name: "Bill Gates",
-        position: "Former CEO of Microsoft",
-        image: "images/testimonials/gates.jpg"
+        text: "BEDO Intelligence has completely transformed my trading strategy. The AI analyzes news and predicts stock movements with amazing accuracy. I’ve seen great returns without spending hours on research. Highly recommend!",
+        name: "Mark",
+        position: "Experienced Trader",
+        image: "images/testimonials/mark.jpg"
     },
     {
         id: 2,
-        text: "BEDO is sooooo bad I have TOO MUCH MONEY!!!",
-        name: "Donald Trump",
-        position: "US President",
-        image: "images/testimonials/trump.png"
+        text: "The AI’s real-time market analysis is impressive, and I’ve made smart trades using its insights. I just wish there were more customization options for risk management. Overall, a solid platform!",
+        name: "Sarah",
+        position: "Casual Investor",
+        image: "images/testimonials/sarah.jpg"
     },
     {
         id: 3,
-        text: "I sold my house for BEDO :((( ",
-        name: "Church Street Pete",
-        position: "Recently homeless and unemployed",
-        image: "images/testimonials/pete.jpg"
+        text: "I was hesitant to start investing, but BEDO Intelligence made it so easy. The AI handles everything, from analyzing news to executing trades, and I’ve already made profits within my first month!",
+        name: "James",
+        position: "First-Time Investor",
+        image: "images/testimonials/james.jpg"
     }
 ]
 
