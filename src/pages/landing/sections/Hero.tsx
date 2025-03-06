@@ -49,7 +49,7 @@ function Hero({ isMobile }: HeroProps) {
                 <h3 className="text-sm md:text-md text-blue-400 uppercase font-medium tracking-widest">Welcome to BEDO Intelligence</h3>
                 <h1 className="text-3xl md:text-4xl font-bold mt-2 leading-12">Revolutionising Trading with AI-Powered Intelligence</h1>
                 <p className="text-base text-zinc-200 mt-2">Harness the power of artificial intelligence to gain an unmatched edge in trading by utilising real-time analysis of news, trends and market movements.</p>
-                <button className="btn btn-soft bg-zinc-700 hover:bg-zinc-500 border-0 mt-4" aria-label="Learn More" onClick={() => navigate("/how-it-works")}>Learn More</button>
+                <button className="btn btn-soft bg-zinc-700 hover:bg-zinc-500 border-0 mt-4 text-white" aria-label="Learn More" onClick={() => navigate("/how-it-works")}>Learn More</button>
             </div>
             <div className="w-4/5 min-h-full z-10 absolute top-0 right-0 pointer-events-none" id="gradient-overlay" aria-hidden="true"></div>
             {/* Hide cards on mobile, show on larger screens */}

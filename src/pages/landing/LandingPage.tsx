@@ -59,7 +59,7 @@ function LandingPage() {
 						}	
 						displayOverlayContent={true}
 					/>
-					<button onClick={() => navigate("/how-it-works")} className="btn btn-soft bg-zinc-700 hover:bg-zinc-500 border-0 -mt-4" aria-label="Learn More">Learn More</button>
+					<button onClick={() => navigate("/how-it-works")} className="btn btn-soft bg-zinc-700 hover:bg-zinc-500 border-0 -mt-4 text-white" aria-label="Learn More">Learn More</button>
 					</div>
 			</section>
 			<Testimonials />

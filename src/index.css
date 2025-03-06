@@ -5,6 +5,10 @@
 
 @plugin "tailwindcss-animate";
 
+:root {
+  color: white;
+}
+
 #gradient-overlay {
   background: rgb(3,3,3);
   background: radial-gradient(ellipse, rgba(3,3,3,0) 0%, rgba(3,3,3,1) 60%);
